@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Pepper 3D Experience</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- X3dom -->
+    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body id="bodyColor">
+
+<!-- Navigation Bar, same as homepage -->
+<nav id="headerColor" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Coca Cola World</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Drinks</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="coke.html">Coca Cola</a>
+                        <a class="dropdown-item" href="sprite.html">Sprite</a>
+                        <a class="dropdown-item" href="pepper.html">Dr Pepper</a>
+                        <a class="dropdown-item" href="smartwater.html">Smart Water</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main content area, similar to the home page -->
+<div class="container-fluid main_contents">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="mt-3">Explore Dr Pepper in 3D</h2>
+            <div class="model3D">
+                <x3d width="100%" height="400px">
+                    <scene>
+                        <NavigationInfo type='"EXAMINE"'></NavigationInfo>
+                        <inline url="assets/x3d/pepperfinal.x3d"></inline>
+                    </scene>
+                </x3d>
+                <p>This interactive 3D model of Dr Pepper allows you to explore different aspects of its iconic design.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer, consistent with the homepage -->
+<footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container text-center">
+        <span>&copy; 2024 Coca Cola 3D World. All rights reserved.</span>
+    </div>
+</footer>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>For more information, please contact us via email at info@cocacola.com.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Required scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://www.x3dom.org/download/x3dom.js"></script>
+
+</body>
+</html>

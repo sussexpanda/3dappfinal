@@ -1,0 +1,139 @@
+/* Custom Font Declarations */
+@font-face {
+    font-family: 'CocaColaFont';
+    src: url('../assets/fonts/loki_cola/LOKICOLA.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald/static/Oswald-Regular.ttf') format('truetype');
+}
+
+/* Basic body styling */
+body {
+    background-color: #f4f4f4; 
+    font-family: 'OpenSans', sans-serif;
+}
+
+/* Navigation Bar Customization */
+.navbar {
+    background-color: #d00f02; 
+    border-bottom: 3px solid #ffffff; 
+}
+
+.navbar-brand {
+    font-family: 'CocaColaFont', cursive; 
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; 
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #c0c0c0; 
+}
+
+/* Main content area styling */
+.main_contents {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #d00f02; 
+}
+
+/* Custom styles for cards */
+.card {
+    background-color: #fafafa; 
+    border: 1px solid #ddd; 
+}
+
+.card-header {
+    background-color: #d00f02; 
+    color: #ffffff; 
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-body {
+    color: #666; 
+}
+
+.card-title {
+    color: #333; 
+}
+
+.card-text {
+    font-size: 14px; 
+}
+
+.card-link {
+    color: #d00f02; 
+
+.card-link:hover {
+    color: #bf0000; /
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px 0;
+    font-family: 'OpenSans', sans-serif;
+}
+
+.footer a {
+    color: #d00f02; 
+}
+
+.footer a:hover {
+    color: #bf0000;
+}
+
+/* Responsive button styling for better touch on mobile */
+.btn-responsive {
+    padding: 8px 15px;
+    font-size: 16px; 
+}
+
+/* Image gallery enhancements */
+.gallery {
+    margin-top: 15px;
+}
+
+.img-thumbnail {
+    border: 1px solid #ddd; 
+    margin-bottom: 10px;
+}
+
+/* Custom 3D model viewer styling */
+.model3D {
+    background-color: #eaeaea; 
+    padding: 10px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; 
+    }
+
+    .main_contents {
+        padding: 10px; 
+    }
+}
